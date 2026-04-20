@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Takshashila Navbar</title>
+    <style>
+        /* General Styles */
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Navbar Container */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #ffffff;
+            padding: 10px 5%;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        /* Logo Styling */
+        .logo img {
+            height: 50px; /* Adjust based on your logo's dimensions */
+            width: auto;
+        }
+
+        /* Navigation Links */
+        .nav-links {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-left: 25px;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #d4a017; /* A gold-tone color often associated with Takshashila */
+        }
+
+        /* Mobile Menu (Optional simple version) */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* You would typically add a hamburger menu here */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+            <!-- Replace the URL below with the actual Takshashila logo path -->
+            <a href="https://takshashila.org.in/">
+                <img src="https://takshashila.org.in" alt="Takshashila Logo">
+            </a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#home">Homepage</a></li>
+            <li><a href="#service">Service</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div style="padding: 50px; text-align: center;">
+        <h1>Welcome to Takshashila</h1>
+        <p>The navigation bar above is now ready for your content.</p>
+    </div>
+
+</body>
+</html>
